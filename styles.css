@@ -293,9 +293,3 @@ div {
     margin: 0px 10px 20px;
 }
 
-/*  */
-@media (max-width:768px){
-    .text-span-1 :hover{
-        color:red;
-    }
-}
