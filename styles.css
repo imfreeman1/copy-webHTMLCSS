@@ -248,9 +248,13 @@ div {
     width: 327px;
     padding: 24px 16px 32px;
     background-color: white;
-    border-radius: 7px;
+    border-radius: 0px 0px 7px 7px;
     margin: 0px 10px;
     margin-right: 16px;
+    -webkit-border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;
+    -ms-border-radius: 0px 0px 7px 7px;
+    -o-border-radius: 0px 0px 7px 7px;
 }
 .text-div span{
     overflow: hidden;
@@ -415,6 +419,13 @@ div {
     font-size: 20px!important;
     line-height: 30px!important;
     font-weight: 700;
+}
+
+.animation-div{
+    width: 100000px;
+    overflow: hidden;
+    display: flex;
+    animation: slidein 15s infinite linear 1s both;
 }
 
 .animation-txt {
