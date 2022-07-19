@@ -243,7 +243,7 @@ div {
 .section3-itembox{
     display: flex;
     flex-direction: column;
-    height: 488px; 
+    height: 530px; 
     width: 396px;
 }
 .text-div{
@@ -287,4 +287,15 @@ div {
     height: 64px;
     border-radius: 8px;
     margin-right:16px
+}
+
+.txt-padding {
+    margin: 0px 10px 20px;
+}
+
+/*  */
+@media (max-width:768px){
+    .text-span-1 :hover{
+        color:red;
+    }
 }
