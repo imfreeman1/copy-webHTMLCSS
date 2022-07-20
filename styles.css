@@ -22,7 +22,7 @@ div {
 }
 .nav-div{
     border-bottom: 1px solid #2a2d32;
-    height: 8%;
+    height: 10%;
     display: flex;
     align-items: center;
     position: fixed;
@@ -422,15 +422,65 @@ div {
 }
 
 .animation-div{
-    width: 100000px;
+    width: 100%;
     overflow: hidden;
     display: flex;
-    animation: slidein 15s infinite linear 1s both;
+    animation: slidein 10s infinite linear 1s both;
+    -webkit-animation: slidein 10s infinite linear 1s both;
 }
 
 .animation-txt {
     font-size: 14px;
     line-height: 20px;
     font-weight: 900;
+}
 
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(3, minmax(50px,30%));
+    grid-template-rows: repeat(3, minmax(30px,auto));
+    place-items: center;
+    place-content: center;
+    gap:10px;
+}
+
+.grid-div img{
+    width: 100%;
+    max-width: 300px;
+    border: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-auto-flow: row dense;
+    place-content: center;
+    gap:10px;
+}
+
+[class^="img-flex"] {
+    display: grid;
+    gap: 10px;
+}
+
+[class^="img-flex"] img{
+    width: 100%;
+    max-width: 300px;
+    border: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    object-fit: contain;
+}
+
+.imgflex-container{
+    width: 100%;
+    height: auto;
 }
